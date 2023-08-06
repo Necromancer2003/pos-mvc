@@ -4,17 +4,23 @@
  */
 package pos.mvc;
 
+import pos.mvc.view.CustomerView;
+import pos.mvc.view.ItemView;
+import pos.mvc.view.WindowChanger;
+
 /**
  *
- * @author yasir
+ * @author yasiru
  */
 public class PosMvc {
-
+   
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) { 
+            new CustomerView().setVisible(true);
+            new ItemView().setVisible(true);
+        
     }
     
 }
